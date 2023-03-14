@@ -51,7 +51,6 @@
     padding-left: 24px;
     padding-right: 0px;
     width: 195px;
-
     background-color: transparent;
   }
 
@@ -99,7 +98,7 @@
   }
 
   .search-filter .font-h2,
-  .search-filter .font-filter-a {
+  .search-filter .font-filter-button {
     display: flex;
     gap: 15px;
   }
@@ -183,7 +182,6 @@
   .location:active i {
     color: #0065fc;
   }
-
   .filter:nth-child(1) i {
     position: relative;
     left: -1px;

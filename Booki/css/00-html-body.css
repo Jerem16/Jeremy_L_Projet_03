@@ -65,6 +65,7 @@ em {
 /*--Général--*/
 
 .font-h1 {
+  /* font-size: 22px; */
   font-weight: 700;
   font-size: 1.375em;
   line-height: 26px;
@@ -73,38 +74,34 @@ em {
 }
 
 .font-h2 {
+  /* font-size: 18px; */
   font-weight: 700;
   font-size: 1.125em;
   line-height: 21px;
 }
 
-.font-filter-a {
+.nav-a {
+  /* font-size: 16px; */ /*lien de navigation*/
+  line-height: 19px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.font-filter-button {
+  /* font-size: 17px; */ /*Boutons filtres*/
   font-weight: 700;
   font-size: 1.063em;
   line-height: 20px;
 }
 
 .font-p {
+  /* font-size: 16px; */ /*paragraphes*/
   font-weight: 400;
   font-size: 1em;
   line-height: 19px;
 }
 
-/****** CARDS ******/
-
-.card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-  object-fit: cover;
-}
-
 /*--Font-Card--*/
-
 .card-title {
   font-weight: 700;
   font-size: 1em;
@@ -121,4 +118,88 @@ em {
 .euro {
   font-weight: 700;
 }
+
+/****** CARDS ******/
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  object-fit: cover;
+}
 /***Fin***/
+@media screen and (max-width: 1440px) {
+  body {
+    background-image: url(../images/Desktop.jpg);
+    background-size: 1440px 1890px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .main-container {
+    opacity: 0.5;
+    color: blue;
+  }
+}
+
+@media screen and (max-width: 1438px) {
+  body {
+    background-image: url(../images/Desktop);
+  }
+  .main-container {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+    background-image: url(../images/Tablette.jpg);
+    background-size: 1024px 2001px;
+  }
+
+  .main-container {
+    opacity: 0.5;
+    color: blue;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  body {
+    background-image: url(../images/Desktop);
+  }
+
+  .main-container {
+    opacity: 1;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .main-container {
+    opacity: 0.5;
+    color: blue;
+  }
+  body {
+    max-width: 375px;
+    background-image: url(../images/Mobile.jpg);
+    background-size: 375px 4122px;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  body {
+    max-width: 374px;
+    background-image: url(../images/Mobile);
+  }
+
+  .main-container {
+    opacity: 1;
+    color: black;
+  }
+}

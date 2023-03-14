@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="./css/05-footer.css" />
     <link rel="stylesheet" href="./css/06-responsive-clearing.css" />
     <link rel="stylesheet" href="./css/style.css" />
-  
   </head>
 
   <body>
@@ -34,7 +33,13 @@
       <!-- HEADER -->
 
       <header class="full-heading">
-        <img class="logo" src="images/logo/Booki@3x.png" alt="logo" />
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="images/logo/Booki.png"
+            srcset="images/logo/Booki.png, images/logo/Booki@3x.png 3x"
+            alt="logo-Booki"
+        /></a>
         <nav class="padding-l-r-comp-margin-a">
           <a class="nav-a" href="#">Hébergements</a>
           <a class="nav-a" href="#">Activités</a>
@@ -56,9 +61,19 @@
 
           <!-- BUTTON-SEARCH -->
 
-          <form class="search-button" action="url" method="get">
+          <form
+            class="search-button"
+            action="https://www.ville-guebwiller.fr/wp-content/uploads/2018/09/en-cours-de-construction.png"
+            method="get"
+            target="_blank"
+          >
             <label for="research"><span class="hidden">research</span></label>
-            <button class="location" aria-label="Name" type="button">
+            <button
+              class="location"
+              aria-label="position"
+              type="submit"
+              formaction="https://www.google.com/maps/place/Marseille/@43.2803238,5.3104373,12z"
+            >
               <i
                 class="fa-sharp fa-solid fa-location-dot black"
                 aria-hidden="true"
@@ -84,7 +99,7 @@
           <article class="search-filter">
             <h2 class="font-h2">Filtres</h2>
 
-            <div class="font-filter-a">
+            <div class="font-filter-button">
               <div class="filter">
                 <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
                 <a href="#">Économique</a>
@@ -430,22 +445,22 @@
         <div class="footer-row">
           <article class="footer-col">
             <h2 class="font-h2">À propos</h2>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Conditions générales</a>
+            <a class="font-p" href="#">Fonctionnement du site</a>
+            <a class="font-p" href="#">Conditions générales</a>
 
             <a href="#">Données et confidentialité</a>
           </article>
 
           <article class="footer-col">
             <h2 class="font-h2">Nos hébergements</h2>
-            <a href="#">Charte qualité</a>
-            <a href="#">Proposer votre hôtel</a>
+            <a class="font-p" href="#">Charte qualité</a>
+            <a class="font-p" href="#">Proposer votre hôtel</a>
           </article>
 
           <article class="footer-col">
             <h2 class="font-h2">Assistance</h2>
-            <a href="#">Centre d’aide</a>
-            <a href="#">Nous contacter</a>
+            <a class="font-p" href="#">Centre d’aide</a>
+            <a class="font-p" href="#">Nous contacter</a>
           </article>
         </div>
       </footer>
